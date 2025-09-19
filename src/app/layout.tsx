@@ -24,21 +24,21 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         {/* Header / Navbar */}
         <header>
           <nav>
-            <span className="logo">Udu Parma</span>
+            <span className="logo"><span className="logo-red">UDU</span> Parma</span>
             <ul>
-              <li><a href="/">Home</a></li>  
-              <li><a href="/about">Programma 25-27</a></li>    
-              <li><a href="/events">Eventi</a></li>
-              <li><a href="/contact">Contattaci</a></li>  
+              <li><a href="/" className="hover-underline">Home</a></li>  
+              <li><a href="/about" className="hover-underline">Programma 25-27</a></li>    
+              <li><a href="/events" className="hover-underline">Eventi</a></li>
+              <li><a href="#contacts-section" className="hover-underline"><span className="red-text">Contattaci</span></a></li>
             </ul>
           </nav>
         </header>     
         {/* Main content */}
-        <main>{children}</main>
+        {children}
 
         {/* Footer */}
         <footer>
-          © 2025 Sindacato Studentesco. Tutti i diritti riservati.
+          © 2025 Udu Parma
         </footer>
       </body>
     </html>
