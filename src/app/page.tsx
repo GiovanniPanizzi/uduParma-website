@@ -3,7 +3,7 @@ import "./page.css";
 function Home() {
   return (
     <main>
-      <a id="first-content" href=""></a>
+      <a href="" id="home"></a>
       <div id="hero" className="hero-section">
         <div className="container">
           <h1>L'unione è rivolta</h1>
@@ -15,7 +15,6 @@ function Home() {
         <div className="container">
           <h2>Prossimi Eventi</h2>
           <div className="events-list">
-            {/* Qui andranno gli eventi futuri */}
             <ul className="events">
               <li className="events-item"><a href="">Beer Pong</a></li>
               <li className="events-item"><a href="">Qualcosa</a></li>
@@ -24,6 +23,7 @@ function Home() {
               <li className="events-item"><a href="">Ancora altro</a></li>
               <li className="events-item"><a href="">Ultimo evento</a></li>
             </ul>
+            <span className="underline"></span>
           </div>
         </div>
       </div>

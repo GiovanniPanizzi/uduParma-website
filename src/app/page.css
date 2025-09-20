@@ -40,6 +40,10 @@
     }
 }
 
+.hero-section {
+  scroll-margin-top: calc(12rem + 60px);
+}
+
 .hero-section h1 {
   margin-bottom: 3rem;
 }

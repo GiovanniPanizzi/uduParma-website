@@ -1,7 +1,9 @@
 import "./globals.css";
 import Link from "next/link";
+import ActiveLink from "./client/activeLink";
 import HeaderScroll from "./client/header";
 import MobileMenu from "./client/hamburger-nav";
+
 
 export const metadata = {
   title: "Udu Parma - Sindacato Studentesco",
@@ -32,7 +34,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
             <span className="logo"><span className="logo-red">UDU</span> Parma <img src="/uduparma_logo.png" alt="" /></span>
             <ul className="main-nav-ul">
               <li>
-                <Link href="/#body" className="hover-underline">Home</Link>
+                <Link href="/" className="hover-underline">Home</Link>
               </li>  
               <li>
                 <Link href="/about" className="hover-underline">Programma 25-27</Link>
@@ -46,6 +48,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
                 </Link>
               </li>
             </ul>
+            <ActiveLink></ActiveLink>
             <MobileMenu></MobileMenu>
             <button className="hamburger">
               <span></span>

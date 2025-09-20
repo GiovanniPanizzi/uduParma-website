@@ -160,6 +160,27 @@ header a {
   font-size: 1.2rem;
 }
 
+nav {
+  position: relative;
+}
+
+.main-nav-ul {
+  display: flex;
+}
+
+.underline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px; /* barra sottile ma elegante */
+  background: linear-gradient(90deg, #ff976b, #febe57); /* colore moderno */
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* leggero effetto 3D */
+  transition: left 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+              background 0.3s ease;
+}
+
 .hover-underline {
   text-decoration: none;
 }
@@ -226,6 +247,10 @@ header a {
     justify-content: center;
     z-index: 99;
     transition: right 0.3s ease-in-out;
+  }
+
+  header nav ul a {
+    font-size: 1.5rem;
   }
   
   header nav ul.active {
