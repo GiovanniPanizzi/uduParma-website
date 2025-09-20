@@ -3,7 +3,8 @@ import "./page.css";
 function Home() {
   return (
     <main>
-      <div className="hero-section">
+      <a id="first-content" href=""></a>
+      <div id="hero" className="hero-section">
         <div className="container">
           <h1>L'unione è rivolta</h1>
           <p>Per un'università libera, inclusiva, accessibile</p>
@@ -42,7 +43,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="contacts-section">
+      <div id="contacts" className="contacts-section">
         <div className="container">
           <h2>Contattaci</h2>
           <p>Siamo a disposizione di tutt3 l3 student3 che abbiano necessità di informazioni o di una mano, non esitare a contattarci!</p>

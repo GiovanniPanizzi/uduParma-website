@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-export default function HeaderAnimated() {
+export default function HeaderScroll() {
   useEffect(() => {
     const header = document.querySelector("header");
     if (!header) return;
@@ -12,6 +12,7 @@ export default function HeaderAnimated() {
     };
 
     window.addEventListener("scroll", onScroll);
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
