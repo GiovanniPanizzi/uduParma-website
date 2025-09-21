@@ -37,7 +37,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
                 <Link href="/" className="hover-underline">Home</Link>
               </li>  
               <li>
-                <Link href="/about" className="hover-underline">Programma 25-27</Link>
+                <Link href="/document" className="hover-underline">Programma 25-27</Link>
               </li>    
               <li>
                 <Link href="/events" className="hover-underline">Eventi</Link>
