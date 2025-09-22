@@ -2,10 +2,14 @@
   --background: #ffffff;
   --foreground: #171717;
   --color-accent: rgb(162, 1, 5);
-  --default-margin: 1rem;
-  --default-font-style: 'Arial', sans-serif;
+  --color-yellow: #c5b934;
+  --color-orange: #ff9f1a;
+  --default-small-margin: 1rem;
+  --default-margin: 2rem;
+  --default-large-margin: 4rem;
+  --default-font-style: 'Montserrat', sans-serif;;
   --default-h1-size: 3.5rem;
-  --default-h2-size: 2.5rem;
+  --default-h2-size: 2.0rem;
   --default-h3-size: 1.75rem;
   --default-text-size: 1.5rem;
 }
@@ -26,6 +30,19 @@
   }
 }
 
+@media(max-width: 700px) {
+  :root {
+      --default-h1-size: 2.5rem;
+      --default-h2-size: 1.7rem;
+      --default-h3-size: 1.75rem;
+      --default-text-size: 1.2rem;
+  }
+  .logo img {
+    height: 40px;
+  }
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +61,13 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 calc(var(--default-margin) * 4);
+  padding: 0 var(--default-large-margin);
+}
+
+@media(max-width: 900px) {
+  .container {
+    padding: 0 var(--default-margin);
+  }
 }
 
 h1 {
@@ -83,6 +106,14 @@ ul {
   color: var(--color-accent);
 }
 
+.yellow-text {
+  color: var(--color-yellow);
+}
+
+.orange-text {
+  color: var(--color-orange);
+}
+
 .rounded-red-button {
   background-color: var(--color-accent);
   color: #ffffff;
@@ -100,7 +131,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 120px;
   width: 100%;
   z-index: 100;
   background-color: var(--background);
@@ -121,11 +152,10 @@ header.scrolled {
 header nav {
   display: flex;
   width: 100%;
-  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
-  margin-right: calc(var(--default-margin) * 4);
-  margin-left: calc(var(--default-margin) * 4);
+  margin-right: var(--default-large-margin);
+  margin-left: var(--default-large-margin);
 }
 
 .logo {
@@ -168,17 +198,10 @@ nav {
   display: flex;
 }
 
-.underline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3px; /* barra sottile ma elegante */
-  background: linear-gradient(90deg, #ff976b, #febe57); /* colore moderno */
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* leggero effetto 3D */
-  transition: left 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
-              width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-              background 0.3s ease;
+@media(max-width: 900px) {
+  .underline {
+    display: none;
+  }
 }
 
 .hover-underline {

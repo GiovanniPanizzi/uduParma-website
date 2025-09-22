@@ -1,0 +1,14 @@
+
+/* HERO */
+
+.title {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--default-margin);
+}
