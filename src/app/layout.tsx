@@ -11,7 +11,7 @@ export const metadata = {
   keywords: ["sindacato", "studenti", "eventi", "iscrizione"],
   author: "Udu Parma",
   viewport: "width=device-width, initial-scale=1.0",
-  favicon: "/favicon.ico",
+  favicon: "/uduparma_logo.png",
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {
@@ -23,14 +23,19 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <meta name="keywords" content={metadata.keywords.join(", ")} />
         <meta name="author" content={metadata.author} />
         <meta name="viewport" content={metadata.viewport} />
+        <link rel="icon" href={metadata.favicon} />
         <title>{metadata.title}</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
 
       <body>
         {/* Header / Navbar */}
         <header>
           <HeaderScroll></HeaderScroll>
-          <nav>
+          <nav className="container">
             <span className="logo"><span className="logo-red">UDU</span> Parma <img src="/uduparma_logo.png" alt="" /></span>
             <ul className="main-nav-ul">
               <li>
@@ -48,7 +53,6 @@ function RootLayout({ children }: { children: React.ReactNode }) {
                 </Link>
               </li>
             </ul>
-            <ActiveLink></ActiveLink>
             <MobileMenu></MobileMenu>
             <button className="hamburger">
               <span></span>

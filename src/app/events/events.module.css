@@ -1,0 +1,14 @@
+
+
+.titleSection{
+    padding-top: var(--default-large-margin);
+    padding-bottom: calc(var(--default-large-margin) * 2);
+}
+
+.eventsGrid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--default-large-margin);
+    padding-bottom: var(--default-large-margin);
+}
+
