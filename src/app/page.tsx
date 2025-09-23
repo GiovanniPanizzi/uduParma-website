@@ -8,7 +8,10 @@ function Home() {
         <div className="container">
           <h1>L'unione è rivolta</h1>
           <p>Per un'università libera, inclusiva, accessibile</p>
-          <button className="rounded-red-button">Scrivici</button>
+          <div className={styles.buttons}>
+            <button className="rounded-red-button">Scrivici</button>
+            <button className="rounded-bordered-red-button">SOS Studenti</button>
+          </div>
         </div>
       </section>
 
@@ -35,18 +38,19 @@ function Home() {
             <div className={styles.text}>
               <h2>Chi siamo</h2>
               <p>
-                L’Unione degli universitari (UDU) è un sindacato studentesco universitario. Ne fanno parte 28 gruppi organizzati nelle principali università italiane.[2]
+                L’Unione degli universitari (UDU) è un sindacato studentesco universitario. Ne fanno parte 28 gruppi organizzati nelle principali università italiane.
 
-                Nasce nel 1994 dopo una serie di assemblee avvenute in diverse città italiane organizzate da preesistenti associazioni studentesche. L’associazione si colloca nella storia e nella cultura politica della sinistra.[3]
+                Nasce nel 1994 dopo una serie di assemblee avvenute in diverse città italiane organizzate da preesistenti associazioni studentesche. L’associazione si colloca nella storia e nella cultura politica della sinistra.
                 Ha un patto di lavoro con la Rete degli studenti medi e con la CGIL.
               </p>
+              <a href="https://unioneuniversitari.it/" className={styles.uduLink}>Leggi di più...</a>
             </div>
             <img src="/udu_bandiera.jpg" alt="UDU Bandiera" />
           </div>
         </div>
       </section>
 
-      <section id="contacts">
+      <section id="contacts" className={styles.contactSection}>
         <div className="container">
           <h2>Contattaci</h2>
           <p>

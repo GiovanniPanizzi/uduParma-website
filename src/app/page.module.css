@@ -43,6 +43,13 @@
     margin-bottom: 2rem;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 .heroSection button {
     width: 150px;
     height: 50px;
@@ -99,6 +106,14 @@
     color: var(--color-accent);
 }
 
+/* SOS studenti */
+.sosSection {
+    background-color: var(--background);
+    padding: 8rem 0;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
 /* ABOUT */
 
 .aboutTextImage img {
@@ -106,7 +121,11 @@
 }
 
 .aboutTextImage .text p {
-    margin-bottom: 6rem;
+    margin-bottom: var(--default-margin);
+}
+
+.uduLink {
+    color: var(--color-accent);
 }
 
 /* ABOUT */
@@ -142,4 +161,17 @@
         margin-top: 0.5rem;
         margin-bottom: 0px;
     }
+}
+
+/* CONTACTS */
+
+.contactSection {
+    background-color: var(--color-accent);
+    padding: 8rem 0;
+    text-align: center;
+    margin-top: var(--default-large-margin);
+}
+
+.contactSection * {
+    color: var(--background);
 }

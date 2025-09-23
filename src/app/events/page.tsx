@@ -10,16 +10,40 @@ function Events() {
             </section>
             <section className={style.recurrentEventsSection}>
                 <div className="container">
-                    <h2>I nostri eventi ricorrenti</h2>
-                    <div className={style.eventsGrid}>
+                    <h2 className={style.headerSecondary}>I nostri eventi ricorrenti</h2>
+                    <div className={style.eventsFlex}>
                         <div className={style.eventCard}>
-                            <h3><span className="yellow-text">Beer</span> Pong</h3>
+                            <h3 className={style.eventTitle}><span className="yellow-text">Sun</span><span className="orange-text">Set</span></h3>
+                            <p>Descrizione del sunset bla bla bla</p>
+                            <p>altre cose</p>
+                            <p>altre cose ancora</p>
+                            <div className="calendar">
+                                <span>Venerdì 27 Settembre</span>
+                                <button className="rounded-red-button">Registrati per l'evento</button>
+                            </div>
                         </div>
                         <div className={style.eventCard}>
-                            <h3>Chess<span className="red-text">Lab</span></h3>
+                            <h3 className={style.eventTitle}><span className="yellow-text">Beer</span> Pong</h3>
+                            <p>Descrizione del beer pong bla bla bla</p>
+                            <p>altre cose</p>
+                            <p>altre cose ancora</p>
+                            <div className="calendar">
+                                <span>Venerdì 27 Settembre</span>
+                                <button className="rounded-red-button">Registrati per l'evento</button>
+                            </div>
                         </div>
                         <div className={style.eventCard}>
-                            <h3><span className="yellow-text">Sun</span><span className="orange-text">Set</span></h3>
+                            <h3 className={style.eventTitle}>Chess<span className="red-text">Lab</span></h3>
+                            <p>Descrizione del chess lab bla bla bla</p>
+                            <p>altre cose</p>
+                            <p>altre cose ancora</p>
+                            <div className="calendar">
+                                <span>Venerdì 27 Settembre</span>
+                                <div className={style.buttons}>
+                                    <button className="rounded-red-button">Registrati per l'evento</button>
+                                    <button className="rounded-bordered-red-button">Gruppo whatsapp</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

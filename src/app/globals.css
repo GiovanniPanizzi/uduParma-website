@@ -2,8 +2,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --color-accent: rgb(162, 1, 5);
-  --color-yellow: #c5b934;
-  --color-orange: #ff9f1a;
+  --light-color-accent: rgb(162, 77, 78);
+  --color-yellow: #d9b748;
+  --color-orange: #be610b;
   --default-small-margin: 1rem;
   --default-margin: 2rem;
   --default-large-margin: 4rem;
@@ -117,12 +118,42 @@ ul {
 .rounded-red-button {
   background-color: var(--color-accent);
   color: #ffffff;
-  border: none;
+  border: 2px solid var(--color-accent);
   border-radius: 25px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.rounded-red-button:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+.rounded-bordered-red-button {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rounded-bordered-red-button:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--default-margin);
+  gap: var(--default-margin);
 }
 
 /* HEADER */
@@ -295,5 +326,4 @@ footer {
   padding: 1rem;
   font-family: var(--default-font-style);
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 2rem;
 }

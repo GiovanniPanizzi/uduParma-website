@@ -1,14 +1,53 @@
 
 
-.titleSection{
+.titleSection {
     padding-top: var(--default-large-margin);
     padding-bottom: calc(var(--default-large-margin) * 2);
 }
 
-.eventsGrid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+.eventsFlex {
+    display: flex;
+    flex-direction: column;
     gap: var(--default-large-margin);
-    padding-bottom: var(--default-large-margin);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recurrentEventsSection {
+    background-color: var(--color-accent);
+    padding: var(--default-large-margin);
+}
+
+.headerSecondary {
+    text-align: center;
+    color: var(--background);
+    margin-bottom: var(--default-margin);
+}
+
+.eventCard {
+    background-color: var(--background);
+    padding: var(--default-margin);
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.eventCard:hover {
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}
+
+.eventTitle {
+    margin-bottom: var(--default-margin);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
